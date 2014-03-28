@@ -150,7 +150,6 @@ class message_queue
 			sem_destroy(&job_sem);
 			if(executing.joinable())
 			{
-				std::cout << "JOINING\n";
 				executing.join();
 			}
 			
